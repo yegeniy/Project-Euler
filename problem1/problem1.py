@@ -1,3 +1,5 @@
+import sys
+
 class ProblemOne:
   def sumMultiples(self, n):
     sum = 0
@@ -10,3 +12,8 @@ class ProblemOne:
     for d in divisors:
       if x%d == 0:
         return True
+
+if __name__ == '__main__':
+  p1 = ProblemOne()
+  n = int(sys.argv[1])
+  print p1.sumMultiples(n)
