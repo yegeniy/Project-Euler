@@ -1,0 +1,12 @@
+class ProblemOne:
+  def sumMultiples(self, n):
+    sum = 0
+    for x in xrange(1,n):
+      if self.divisibleBy(x, (3,5)):
+        sum += x
+    return sum
+
+  def divisibleBy(self, x, divisors):
+    for d in divisors:
+      if x%d == 0:
+        return True
